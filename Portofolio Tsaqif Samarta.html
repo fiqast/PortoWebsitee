@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Tsaqif Samarta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body {
+            background-color: #121212;
+            color: #E0E0E0;
+            overflow-x: hidden;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #1E3A8A, #1E40AF); /* Biru Tua */
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .floating-image {
+            animation: float 4s ease-in-out infinite;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(30,58,138,0.3); /* Biru Tua */
+        }
+
+        .nav-title {
+        position: relative;
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: bold;
+        background: linear-gradient(90deg, #1E3A8A, #1E40AF); /* Gradient biru */
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: all 0.3s ease; /* Efek transisi */
+        }
+
+        .nav-title:hover {
+        background: linear-gradient(90deg, #3B82F6, #9333EA); /* Gradient baru saat hover */
+        -webkit-background-clip: text;
+        color: transparent;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--Navigasi-->
+    <nav class="fixed w-full bg-[#1E1E1E] z-50 py-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="nav-title">Muhammad Tsaqif Samarta</h1>
+            <div class="space-x-4">
+                <a href="#home" class="text-blue-300 hover:text-blue-500">Home</a>
+                <a href="#tentang" class="text-blue-300 hover:text-blue-500">Tentang</a>
+                <a href="#skills" class="text-blue-300 hover:text-blue-500">Skills</a>
+                <a href="#project" class="text-blue-300 hover:text-blue-500">Project</a>
+                <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!--Home-->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16">
+        <div class="text-center">
+            <div class="w-64 h-64 mx-auto mb-6 rounded-full overflow-hidden border-4 border-blue-600 floating-image">
+                <img src="images/pasfoto.png" alt="Foto Profil" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-4xl font-bold mb-4 gradient-text">Muhammad Tsaqif Samarta</h1>
+            <p class="text-xl mb-6 text-blue-300">Computer Science Student</p>
+            <div class="space-x-4">
+                <a href="#project" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Lihat Project</a>
+                <a href="#contact" class="border-2 border-blue-600 text-blue-400 px-6 py-3 rounded-full hover:bg-blue-600 hover:text-white">Contact Me</a>
+                <a href="assets/CV Muhammad Tsaqif Samarta.pdf" download="CV Muhammad Tsaqif Samarta" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang -->
+    <section id="tentang" class=" py-20 bg-[#1E1E1E] animate-on-scroll">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 gradient-text">Tentang Saya</h2>
+            <p class="max-w-2xl mx-auto text-blue-300">
+                Saya adalah mahasiswa tingkat sarjana di bidang Ilmu Komputer di Universitas Bina Nusantara, dengan spesialisasi dalam Teknologi Basis Data. Saya memiliki hasrat terhadap data, jaringan, UI/UX, dan teknologi terkini, serta berkeinginan untuk menerapkan pengetahuan saya dalam konteks dunia nyata. Melalui keterlibatan aktif dalam organisasi mahasiswa, saya telah mengembangkan keterampilan penting dalam manajemen waktu, analisis data, kerja tim, dan berbicara di depan umum, yang mempersiapkan saya untuk berkembang dalam lingkungan yang dinamis. Didorong oleh komitmen untuk terus belajar sepanjang hidup, saya antusias untuk berkontribusi dalam bidang teknologi dengan solusi inovatif yang berbasis data.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-20 bg-[#121212] animate-on-scroll">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center gradient-text">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="project-card bg-[#1E1E1E] p-6 rounded-lg shadow-lg text-center">
+                    <i class="fab fa-python text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Python</h3>
+                    <p class="text-blue-300">Pengembangan aplikasi dan analisis data menggunakan Python</p>
+                </div>
+                <div class="project-card bg-[#1E1E1E] p-6 rounded-lg shadow-lg text-center">
+                    <i class="fab fa-js-square text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">JavaScript</h3>
+                    <p class="text-blue-300">Membuat aplikasi web interaktif dengan JavaScript.</p>
+                </div>
+                <div class="project-card bg-[#1E1E1E] p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-database text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Database</h3>
+                    <p class="text-blue-300">MySQL, NoSQL</p>
+                </div>
+                <div class="project-card bg-[#1E1E1E] p-6 rounded-lg shadow-lg text-center">
+                    <i class="fab fa-figma text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">UI/UX</h3>
+                    <p class="text-blue-300">Figma</p>
+                </div>
+                <div class="project-card bg-[#1E1E1E] p-6 rounded-lg shadow-lg text-center">
+                    <img src="images/cisco.png" alt="Network" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Network</h3>
+                    <p class="text-blue-300">Merancang alur jaringan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project -->
+    <section id="project" class="min-h-screen py-16 bg-[#1E1E1E]">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 gradient-text">Project</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="project-card bg-[#121212] p-6 rounded-lg shadow-lg">
+                    <img src="images/project1.png" alt="Project 1" class="w-full h-40 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold text-blue-500">Library System</h3>
+                    <p class="text-blue-300 mb-4">
+                        Aplikasi berbasis web dengan php untuk mengelola buku-buku perpustakaan
+                    </p>
+                    <a href="https://github.com/fiqast/library_system" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">GitHub Repo</a>
+                </div>
+                <div class="project-card bg-[#121212] p-6 rounded-lg shadow-lg">
+                    <img src="images/project2.png" alt="Project 2" class="w-full h-40 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold text-blue-500">Student Finance Report</h3>
+                    <p class="text-blue-300 mb-4">
+                        Aplikasi berbasis website dengan python untuk membantu mahasiswa mengelola laporan keuangan
+                    </p>
+                    <a href="https://github.com/fiqast/finance_report" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">GitHub Repo</a>
+                </div>
+                <div class="project-card bg-[#121212] p-6 rounded-lg shadow-lg">
+                    <img src="images/project3.png" alt="Project 3" class="w-full h-40 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold text-blue-500">Computer Network</h3>
+                    <p class="text-blue-300 mb-4">
+                        Merancang jaringan komputer dengan konfigurasi IP statis untuk konektivitas yang stabil dan efisien
+                    </p>
+                    <a href="https://github.com/fiqast/comp_network" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">GitHub Repo</a>
+                </div>
+                <div class="project-card bg-[#121212] p-6 rounded-lg shadow-lg">
+                    <img src="images/project4.png" alt="Project 4" class="w-full h-40 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold text-blue-500">TutorDek</h3>
+                    <p class="text-blue-300 mb-4">
+                        Design aplikasi pemesanan guru untuk memudahkan pelajar mendapatkan pembelajaran yang maksimal 
+                    </p>
+                    <a href="https://www.figma.com/design/WJ65hG5RF1hh1YJfTDBpTg/EDUTECH-LANDING-PAGE?node-id=2-3&t=xRg4wW0ighJYNkQ2-1" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">GitHub Repo</a>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="https://github.com/fiqast?tab=repositories" class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700">Project Lain</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-[#121212] animate-on-scroll">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 gradient-text">Hubungi Saya</h2>
+            <form action="https://formspree.io/f/xvggneyg" method="POST" class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <input type="text" name="name" placeholder="Nama Lengkap" 
+                        class="w-full p-3 rounded bg-[#1E1E1E] text-white border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                </div>
+                <div class="mb-4">
+                    <input type="email" name="email" placeholder="Email" 
+                        class="w-full p-3 rounded bg-[#1E1E1E] text-white border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                </div>
+                <div class="mb-4">
+                    <textarea name="message" placeholder="Pesan Anda" rows="4" 
+                        class="w-full p-3 rounded bg-[#1E1E1E] text-white border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-600" required></textarea>
+                </div>
+                <button type="submit" 
+                    class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">
+                    Kirim Pesan
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-[#1E1E1E] py-6">
+        <div class="container mx-auto text-center">
+            <!-- Social Media Links -->
+            <div class="mb-4 space-x-6">
+                <a href="https://github.com/fiqast?tab=repositories" target="_blank" class="text-blue-500 hover:text-blue-700">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/muhammadtsaqifsamarta/" target="_blank" class="text-blue-500 hover:text-blue-700">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="https://www.instagram.com/tsamrta?igsh=MXhibGp6OXdndGYzaQ==" target="_blank" class="text-blue-500 hover:text-blue-700">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+            </div>
+            <!-- Copyright -->
+            <p class="text-blue-300 text-sm">
+                &copy; 2025 Muhammad Tsaqif Samarta. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    
+    <script>
+        // Animasi untuk elemen-elemen ketika digulir ke bawah
+        gsap.utils.toArray('.animate-on-scroll').forEach((elem) => {
+            gsap.from(elem, {
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: elem,
+                    start: 'top 80%',
+                    end: 'top 50%',
+                    toggleActions: 'play none none reverse'
+                }
+            });
+        });
+    
+        // Animasi untuk tombol
+        gsap.to('.bg-blue-600', {
+            scale: 1.1,
+            duration: 0.3,
+            ease: 'ease-in-out',
+            repeat: -1,
+            yoyo: true
+        });
+    
+        // Animasi untuk gambar profil
+    gsap.from('.floating-image', {
+        opacity: 0,
+        scale: 0.8, // Zoom-in effect
+        duration: 1.5,
+        ease: 'power2.out',
+        scrollTrigger: {
+            trigger: '.floating-image',
+            start: 'top 80%',
+            end: 'top 50%',
+            toggleActions: 'play none none reverse'
+        }
+    });
+    
+        // Animasi saat elemen proyek muncul
+        gsap.from('.project-card', {
+            opacity: 0,
+            y: 100,
+            stagger: 0.2,
+            duration: 1,
+            ease: 'power2.out',
+            scrollTrigger: {
+                trigger: '.project-card',
+                start: 'top 75%',
+                end: 'top 50%',
+                toggleActions: 'play none none reverse'
+            }
+        });
+    </script>
+    
+</body>
+</html>
